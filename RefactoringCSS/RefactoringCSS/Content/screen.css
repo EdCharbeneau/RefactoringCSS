@@ -34,40 +34,40 @@ h1.section-heading {
   color: #808080;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 nav#primary ul {
   float: right;
 }
-/* line 41, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 nav#primary ul li {
   float: left;
 }
-/* line 45, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 nav#primary a {
-  background-color: #d0d0d0;
   color: #1e1e1e;
+  background-color: #d0d0d0;
+  text-decoration: none;
   display: block;
-  border-radius: 3px;
   padding: 12px 6px;
   margin: 0 4px;
-  text-decoration: none;
+  border-radius: 3px;
 }
-/* line 53, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 nav#primary a:hover {
   background-color: white;
 }
-/* line 58, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 nav#secondary a {
   color: #1e1e1e;
+  background-color: #d0d0d0;
   text-decoration: none;
   display: block;
   padding: 10px;
-  background-color: #d0d0d0;
   margin: 2px;
   text-align: center;
   border: 1px #0ca0c6 solid;
 }
-/* line 67, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 nav#secondary a:hover {
   background-color: white;
 }

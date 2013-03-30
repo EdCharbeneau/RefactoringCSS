@@ -8,65 +8,68 @@ $highlight-color: #FFF;
 $contrast-color: #1e1e1e;
 
 body {
-  background-color: $highlight-color;
+    background-color: $highlight-color;
 }
 
 #master-header {
-  background-color: $accent-color;
-  color: $highlight-color;
-  h1 {
+    background-color: $accent-color;
     color: $highlight-color;
-  }
+    h1 {
+        color: $highlight-color;
+    }
 }
 
 #master-footer {
-  background-color: $accent-color;
-  border-top: 3px $accent-color solid;
-  color: $highlight-color;
+    background-color: $accent-color;
+    border-top: 3px $accent-color solid;
+    color: $highlight-color;
 }
 
 h1, h2, h3 {
-  color: $accent-color;
+    color: $accent-color;
 }
 
 h1.section-heading {
-  font-size: 23px;
-  color: #808080;
+    font-size: 23px;
+    color: #808080;
+}
+@mixin button-base($margin: 2px, $padding: 10px) {
+    color: $contrast-color;
+    background-color: $base-color;
+    text-decoration: none;
+    display: block;
+	padding:$padding;
+	margin: $margin;
+	&:hover {
+        background-color: $highlight-color;
+    }
+}
+
+@mixin square-button($margin: 2px, $padding: 10px) {
+	@include button-base($margin, $padding);
+    text-align: center;
+    border: 1px $accent-color solid;
+}
+
+@mixin round-button($margin, $padding, $radius: 3px) {
+    @include button-base($margin,12px 6px);
+    border-radius: $radius;
 }
 
 nav {
-  &#primary {
-    ul {
-      float: right;
-      li {
-        float: left;
-      }
+    &#primary {
+        ul {
+            float: right;
+            li {
+                float: left;
+            }
+        }
+        a {
+            @include round-button(0 4px,12px 6px);
+        }
     }
-    a {
-      background-color: $base-color;
-      color: $contrast-color;
-      display: block;
-      border-radius: 3px;
-      padding: 12px 6px;
-      margin: 0 4px;
-      text-decoration: none;
-      &:hover {
-        background-color: $highlight-color;
-      }
+    &#secondary a {
+        @include square-button();
     }
-  }
-  &#secondary a {
-    color: $contrast-color;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    background-color: $base-color;
-    margin: 2px;
-    text-align: center;
-    border: 1px $accent-color solid;
-    &:hover {
-      background-color: $highlight-color;
-    }
-  }
 }
 
