@@ -1,27 +1,32 @@
 /*
     Site or App Theme styles
 */
+// Color variables
+$base-color: #d0d0d0;
+$accent-color: #0ca0c6;
+$highlight-color: #FFF;
+$contrast-color: #1e1e1e;
 
 body {
-  background-color: #FFF;
+  background-color: $highlight-color;
 }
 
 #master-header {
-  background-color: #0ca0c6;
-  color: #FFF;
+  background-color: $accent-color;
+  color: $highlight-color;
   h1 {
-    color: #FFF;
+    color: $highlight-color;
   }
 }
 
 #master-footer {
-  background-color: #1e1e1e;
-  border-top: 3px #0ca0c6 solid;
-  color: #FFF;
+  background-color: $accent-color;
+  border-top: 3px $accent-color solid;
+  color: $highlight-color;
 }
 
 h1, h2, h3 {
-  color: #0ca0c6;
+  color: $accent-color;
 }
 
 h1.section-heading {
@@ -38,29 +43,29 @@ nav {
       }
     }
     a {
-      background-color: #d0d0d0;
-      color: #1e1e1e;
+      background-color: $base-color;
+      color: $contrast-color;
       display: block;
       border-radius: 3px;
       padding: 12px 6px;
       margin: 0 4px;
       text-decoration: none;
       &:hover {
-        background-color: #FFF;
+        background-color: $highlight-color;
       }
     }
   }
   &#secondary a {
-    color: #1e1e1e;
+    color: $contrast-color;
     text-decoration: none;
     display: block;
     padding: 10px;
-    background-color: #d0d0d0;
+    background-color: $base-color;
     margin: 2px;
     text-align: center;
-    border: 1px #0ca0c6 solid;
+    border: 1px $accent-color solid;
     &:hover {
-      background-color: #fff;
+      background-color: $highlight-color;
     }
   }
 }

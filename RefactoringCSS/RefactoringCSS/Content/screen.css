@@ -1,48 +1,48 @@
 /*
     Site or App Theme styles
 */
-/* line 5, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 body {
-  background-color: #FFF;
+  background-color: white;
 }
 
-/* line 9, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 #master-header {
   background-color: #0ca0c6;
-  color: #FFF;
+  color: white;
 }
-/* line 12, ../sass/screen.scss */
-#master-header h1 {
-  color: #FFF;
-}
-
 /* line 17, ../sass/screen.scss */
-#master-footer {
-  background-color: #1e1e1e;
-  border-top: 3px #0ca0c6 solid;
-  color: #FFF;
+#master-header h1 {
+  color: white;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
+#master-footer {
+  background-color: #0ca0c6;
+  border-top: 3px #0ca0c6 solid;
+  color: white;
+}
+
+/* line 28, ../sass/screen.scss */
 h1, h2, h3 {
   color: #0ca0c6;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 h1.section-heading {
   font-size: 23px;
   color: #808080;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 nav#primary ul {
   float: right;
 }
-/* line 36, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 nav#primary ul li {
   float: left;
 }
-/* line 40, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 nav#primary a {
   background-color: #d0d0d0;
   color: #1e1e1e;
@@ -52,11 +52,11 @@ nav#primary a {
   margin: 0 4px;
   text-decoration: none;
 }
-/* line 48, ../sass/screen.scss */
-nav#primary a:hover {
-  background-color: #FFF;
-}
 /* line 53, ../sass/screen.scss */
+nav#primary a:hover {
+  background-color: white;
+}
+/* line 58, ../sass/screen.scss */
 nav#secondary a {
   color: #1e1e1e;
   text-decoration: none;
@@ -67,7 +67,7 @@ nav#secondary a {
   text-align: center;
   border: 1px #0ca0c6 solid;
 }
-/* line 62, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 nav#secondary a:hover {
-  background-color: #fff;
+  background-color: white;
 }
