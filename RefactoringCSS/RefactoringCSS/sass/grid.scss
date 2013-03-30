@@ -1,0 +1,56 @@
+/*
+    A simple responsive grid system  
+
+    Usage:
+    <div class="grid">
+        <div class="col half"></div>
+        <div class="col half"></div>
+    </div>  
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 980px;
+  *zoom: 1;
+  padding: 20px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .col {
+    float: left;
+    padding: 0 24px;
+    &.full {
+      width: 100%;
+    }
+    &.half {
+      width: 50%;
+    }
+    &.quarter {
+      width: 25%;
+    }
+    &.third {
+      width: 33.33%;
+    }
+    &.two-thirds {
+      width: 66.66%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Small Device Styles here */
+  .grid .col {
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+

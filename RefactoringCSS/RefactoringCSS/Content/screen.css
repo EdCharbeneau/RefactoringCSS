@@ -1,67 +1,73 @@
-﻿/*
+/*
     Site or App Theme styles
 */
+/* line 5, ../sass/screen.scss */
 body {
-    background-color: #FFF;
+  background-color: #FFF;
 }
 
+/* line 9, ../sass/screen.scss */
 #master-header {
-    background-color: #0ca0c6;
-    color: #FFF;
+  background-color: #0ca0c6;
+  color: #FFF;
+}
+/* line 12, ../sass/screen.scss */
+#master-header h1 {
+  color: #FFF;
 }
 
-    #master-header h1 {
-        color: #FFF;
-    }
-
+/* line 17, ../sass/screen.scss */
 #master-footer {
-    background-color: #1e1e1e;
-    border-top: 3px #0ca0c6 solid;
-    color: #FFF;
+  background-color: #1e1e1e;
+  border-top: 3px #0ca0c6 solid;
+  color: #FFF;
 }
 
+/* line 23, ../sass/screen.scss */
 h1, h2, h3 {
-    color: #0ca0c6;
+  color: #0ca0c6;
 }
 
-    h1.section-heading {
-        font-size: 23px;
-        color: #808080;
-    }
+/* line 27, ../sass/screen.scss */
+h1.section-heading {
+  font-size: 23px;
+  color: #808080;
+}
 
+/* line 34, ../sass/screen.scss */
 nav#primary ul {
-    float: right;
+  float: right;
 }
-
-    nav#primary ul li {
-        float: left;
-    }
-
+/* line 36, ../sass/screen.scss */
+nav#primary ul li {
+  float: left;
+}
+/* line 40, ../sass/screen.scss */
 nav#primary a {
-    background-color: #d0d0d0;
-    color: #1e1e1e;
-    display: block;
-    border-radius: 3px;
-    padding: 12px 6px;
-    margin: 0 4px;
-    text-decoration: none;
+  background-color: #d0d0d0;
+  color: #1e1e1e;
+  display: block;
+  border-radius: 3px;
+  padding: 12px 6px;
+  margin: 0 4px;
+  text-decoration: none;
 }
-
-    nav#primary a:hover {
-        background-color: #FFF;
-    }
-
+/* line 48, ../sass/screen.scss */
+nav#primary a:hover {
+  background-color: #FFF;
+}
+/* line 53, ../sass/screen.scss */
 nav#secondary a {
-    color: #1e1e1e;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    background-color: #d0d0d0;
-    margin: 2px;
-    text-align: center;
-    border: 1px #0ca0c6 solid;
+  color: #1e1e1e;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background-color: #d0d0d0;
+  margin: 2px;
+  text-align: center;
+  border: 1px #0ca0c6 solid;
 }
-
-    nav#secondary a:hover {
-        background-color: #fff;
-    }
+/* line 62, ../sass/screen.scss */
+nav#secondary a:hover {
+  background-color: #fff;
+}

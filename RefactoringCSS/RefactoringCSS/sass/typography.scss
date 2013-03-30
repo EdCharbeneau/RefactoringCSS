@@ -1,7 +1,7 @@
 /*
     Some basic typography styles
 */
-/* line 5, ../sass/typography.scss */
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-style: normal;
@@ -12,37 +12,30 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 14px;
 }
 
-/* line 15, ../sass/typography.scss */
 h1 {
   font-size: 44px;
 }
 
-/* line 19, ../sass/typography.scss */
 h2 {
   font-size: 37px;
 }
 
-/* line 23, ../sass/typography.scss */
 h3 {
   font-size: 27px;
 }
 
-/* line 27, ../sass/typography.scss */
 h4 {
   font-size: 23px;
 }
 
-/* line 31, ../sass/typography.scss */
 h5 {
   font-size: 17px;
 }
 
-/* line 35, ../sass/typography.scss */
 h6 {
   font-size: 14px;
 }
 
-/* line 39, ../sass/typography.scss */
 p {
   font-family: inherit;
   font-weight: normal;
@@ -50,3 +43,4 @@ p {
   line-height: 1.6;
   margin-bottom: 17px;
 }
+
