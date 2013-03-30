@@ -1,0 +1,67 @@
+﻿/*
+    Site or App Theme styles
+*/
+body {
+    background-color: #FFF;
+}
+
+#master-header {
+    background-color: #0ca0c6;
+    color: #FFF;
+}
+
+    #master-header h1 {
+        color: #FFF;
+    }
+
+#master-footer {
+    background-color: #1e1e1e;
+    border-top: 3px #0ca0c6 solid;
+    color: #FFF;
+}
+
+h1, h2, h3 {
+    color: #0ca0c6;
+}
+
+    h1.section-heading {
+        font-size: 23px;
+        color: #808080;
+    }
+
+nav#primary ul {
+    float: right;
+}
+
+    nav#primary ul li {
+        float: left;
+    }
+
+nav#primary a {
+    background-color: #d0d0d0;
+    color: #1e1e1e;
+    display: block;
+    border-radius: 3px;
+    padding: 12px 6px;
+    margin: 0 4px;
+    text-decoration: none;
+}
+
+    nav#primary a:hover {
+        background-color: #FFF;
+    }
+
+nav#secondary a {
+    color: #1e1e1e;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #d0d0d0;
+    margin: 2px;
+    text-align: center;
+    border: 1px #0ca0c6 solid;
+}
+
+    nav#secondary a:hover {
+        background-color: #fff;
+    }

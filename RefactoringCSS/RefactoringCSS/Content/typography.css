@@ -1,0 +1,28 @@
+﻿/*
+    Some basic typography styles
+*/
+h1, h2, h3, h4, h5, h6 {  
+    font-weight: bold;
+    font-style: normal; 
+    color: #222222; 
+    text-rendering: optimizeLegibility; 
+    line-height: 1.1; margin-bottom: 14px; 
+    margin-top: 14px; }
+
+h1 { font-size: 44px; }
+
+h2 { font-size: 37px; }
+
+h3 { font-size: 27px; }
+
+h4 { font-size: 23px; }
+
+h5 { font-size: 17px; }
+
+h6 { font-size: 14px; }
+
+p { font-family: inherit; 
+    font-weight: normal; 
+    font-size: 14px; 
+    line-height: 1.6; 
+    margin-bottom: 17px; }
