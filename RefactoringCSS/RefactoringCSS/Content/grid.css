@@ -7,55 +7,55 @@
         <div class="col half"></div>
     </div>  
 */
-/* line 11, ../sass/grid.scss */
+/* line 16, ../sass/grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 17, ../sass/grid.scss */
+/* line 22, ../sass/grid.scss */
 .grid {
   margin: 0 auto;
   max-width: 980px;
   *zoom: 1;
   padding: 20px 0;
 }
-/* line 22, ../sass/grid.scss */
+/* line 27, ../sass/grid.scss */
 .grid:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 27, ../sass/grid.scss */
+/* line 32, ../sass/grid.scss */
 .grid .col {
   float: left;
   padding: 0 24px;
 }
-/* line 30, ../sass/grid.scss */
+/* line 35, ../sass/grid.scss */
 .grid .col.full {
   width: 100%;
 }
-/* line 33, ../sass/grid.scss */
+/* line 38, ../sass/grid.scss */
 .grid .col.half {
   width: 50%;
 }
-/* line 36, ../sass/grid.scss */
+/* line 41, ../sass/grid.scss */
 .grid .col.quarter {
   width: 25%;
 }
-/* line 39, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .grid .col.third {
   width: 33.33%;
 }
-/* line 42, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .grid .col.two-thirds {
   width: 66.66%;
 }
 
 @media only screen and (max-width: 767px) {
   /* Small Device Styles here */
-  /* line 50, ../sass/grid.scss */
+  /* line 55, ../sass/grid.scss */
   .grid .col {
     float: none;
     width: auto !important;
