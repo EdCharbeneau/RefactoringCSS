@@ -7,56 +7,51 @@
         <div class="col half"></div>
     </div>  
 */
-/* line 16, ../sass/grid.scss */
+/* line 20, ../sass/grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 22, ../sass/grid.scss */
-.grid {
+/* line 51, ../sass/grid.scss */
+#master-header > div {
   margin: 0 auto;
   max-width: 980px;
   *zoom: 1;
   padding: 20px 0;
 }
-/* line 27, ../sass/grid.scss */
-.grid:after {
+/* line 32, ../sass/grid.scss */
+#master-header > div:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 32, ../sass/grid.scss */
-.grid .col {
+/* line 53, ../sass/grid.scss */
+#master-header > div h1 {
   float: left;
   padding: 0 24px;
-}
-/* line 35, ../sass/grid.scss */
-.grid .col.full {
-  width: 100%;
-}
-/* line 38, ../sass/grid.scss */
-.grid .col.half {
-  width: 50%;
-}
-/* line 41, ../sass/grid.scss */
-.grid .col.quarter {
-  width: 25%;
-}
-/* line 44, ../sass/grid.scss */
-.grid .col.third {
   width: 33.33%;
 }
-/* line 47, ../sass/grid.scss */
-.grid .col.two-thirds {
+@media only screen and (max-width: 767px) {
+  /* line 53, ../sass/grid.scss */
+  #master-header > div h1 {
+    /* Small Device Styles here */
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+/* line 56, ../sass/grid.scss */
+#master-header > div nav#primary {
+  float: left;
+  padding: 0 24px;
   width: 66.66%;
 }
-
 @media only screen and (max-width: 767px) {
-  /* Small Device Styles here */
-  /* line 55, ../sass/grid.scss */
-  .grid .col {
+  /* line 56, ../sass/grid.scss */
+  #master-header > div nav#primary {
+    /* Small Device Styles here */
     float: none;
     width: auto !important;
     padding: 0 !important;

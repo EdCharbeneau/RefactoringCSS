@@ -13,49 +13,70 @@ $gutter:24px;
 $small-device-width: 767px;
 $vertical-whitespace: 20px;
 
+// Predefined column widths
+$third: 33.33%;
+$two-thirds: 66.66%;
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.grid {
-  margin: 0 auto;
-  max-width: $layout-width;
-  *zoom: 1;
-  padding: $vertical-whitespace 0;
-  &:after {
+// Grid Mixins
+@mixin row() {
+    margin: 0 auto;
+    max-width: $layout-width;
+    *zoom: 1;
+    padding: $vertical-whitespace 0;
+    &:after {
     content: "";
     display: table;
     clear: both;
   }
-  .col {
+}
+@mixin column($column-width:100%) {
     float: left;
     padding: 0 $gutter;
-    &.full {
-      width: 100%;
-    }
-    &.half {
-      width: 50%;
-    }
-    &.quarter {
-      width: 25%;
-    }
-    &.third {
-      width: 33.33%;
-    }
-    &.two-thirds {
-      width: 66.66%;
-    }
-  }
+	width: $column-width;
+	@media only screen and (max-width: $small-device-width) {
+    /* Small Device Styles here */
+    
+        float: none;
+        width: auto !important;
+        padding: 0 !important;
+	}
 }
 
-@media only screen and (max-width: $small-device-width) {
-  /* Small Device Styles here */
-  .grid .col {
-    float: none;
-    width: auto !important;
-    padding: 0 !important;
-  }
+#master-header > div {
+	@include row;
+	h1 {
+	    @include column($third);
+	}
+	nav#primary {
+	    @include column($two-thirds);
+	}
 }
 
+// Uncomment if the grid mixins need to be used on an inline class attribute
+//.grid {
+//  @include row;
+//  .col {
+//    &.full {
+//      @include column;
+//    }
+//	// not used in this example
+//    //&.half {
+//    //  width: 50%;
+//    //}
+//    //&.quarter {
+//    //  width: 25%;
+//    //}
+//    &.third {
+//      @include column($third);
+//    }
+//    &.two-thirds {
+//      @include column($two-thirds);
+//    }
+//  }
+//}
