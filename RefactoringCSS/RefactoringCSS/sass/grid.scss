@@ -18,9 +18,9 @@ $third: 33.33%;
 $two-thirds: 66.66%;
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 // Grid Mixins
@@ -30,10 +30,10 @@ $two-thirds: 66.66%;
     *zoom: 1;
     padding: $vertical-whitespace 0;
     &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 @mixin column($column-width:100%) {
     float: left;
@@ -48,6 +48,7 @@ $two-thirds: 66.66%;
 	}
 }
 
+//Page layout
 #master-header > div {
 	@include row;
 	h1 {
@@ -57,6 +58,25 @@ $two-thirds: 66.66%;
 	    @include column($two-thirds);
 	}
 }
+
+#main-content {
+    @include row;
+	nav#secondary {
+        @include column($third);
+	}
+	> section {
+	    @include column($two-thirds);
+    }
+}
+
+#master-footer > div {
+	@include row;
+	> section {
+	    @include column;
+	}
+}
+
+
 
 // Uncomment if the grid mixins need to be used on an inline class attribute
 //.grid {

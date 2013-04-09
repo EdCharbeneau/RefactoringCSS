@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-/* line 51, ../sass/grid.scss */
+/* line 52, ../sass/grid.scss */
 #master-header > div {
   margin: 0 auto;
   max-width: 980px;
@@ -27,14 +27,14 @@
   display: table;
   clear: both;
 }
-/* line 53, ../sass/grid.scss */
+/* line 54, ../sass/grid.scss */
 #master-header > div h1 {
   float: left;
   padding: 0 24px;
   width: 33.33%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 53, ../sass/grid.scss */
+  /* line 54, ../sass/grid.scss */
   #master-header > div h1 {
     /* Small Device Styles here */
     float: none;
@@ -42,15 +42,88 @@
     padding: 0 !important;
   }
 }
-/* line 56, ../sass/grid.scss */
+/* line 57, ../sass/grid.scss */
 #master-header > div nav#primary {
   float: left;
   padding: 0 24px;
   width: 66.66%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 56, ../sass/grid.scss */
+  /* line 57, ../sass/grid.scss */
   #master-header > div nav#primary {
+    /* Small Device Styles here */
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+
+/* line 62, ../sass/grid.scss */
+#main-content {
+  margin: 0 auto;
+  max-width: 980px;
+  *zoom: 1;
+  padding: 20px 0;
+}
+/* line 32, ../sass/grid.scss */
+#main-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 64, ../sass/grid.scss */
+#main-content nav#secondary {
+  float: left;
+  padding: 0 24px;
+  width: 33.33%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 64, ../sass/grid.scss */
+  #main-content nav#secondary {
+    /* Small Device Styles here */
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+/* line 67, ../sass/grid.scss */
+#main-content > section {
+  float: left;
+  padding: 0 24px;
+  width: 66.66%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 67, ../sass/grid.scss */
+  #main-content > section {
+    /* Small Device Styles here */
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+
+/* line 72, ../sass/grid.scss */
+#master-footer > div {
+  margin: 0 auto;
+  max-width: 980px;
+  *zoom: 1;
+  padding: 20px 0;
+}
+/* line 32, ../sass/grid.scss */
+#master-footer > div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 74, ../sass/grid.scss */
+#master-footer > div > section {
+  float: left;
+  padding: 0 24px;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 74, ../sass/grid.scss */
+  #master-footer > div > section {
     /* Small Device Styles here */
     float: none;
     width: auto !important;
