@@ -1,48 +1,297 @@
+/* 
+    CSS Reset for more information see http://meyerweb.com/eric/tools/css/reset/index.html
+*/
+/* line 5, ../sass/modules/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 14, ../sass/modules/_reset.scss */
+html {
+  line-height: 1;
+}
+
+/* line 18, ../sass/modules/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 22, ../sass/modules/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 27, ../sass/modules/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 33, ../sass/modules/_reset.scss */
+q, blockquote {
+  quotes: none;
+}
+
+/* line 38, ../sass/modules/_reset.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 45, ../sass/modules/_reset.scss */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 51, ../sass/modules/_reset.scss */
+a img {
+  border: none;
+}
+
+/* line 55, ../sass/modules/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+    Some basic typography styles
+*/
+/* line 5, ../sass/modules/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-style: normal;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+/* line 15, ../sass/modules/_typography.scss */
+h1 {
+  font-size: 44px;
+}
+
+/* line 19, ../sass/modules/_typography.scss */
+h2 {
+  font-size: 37px;
+}
+
+/* line 23, ../sass/modules/_typography.scss */
+h3 {
+  font-size: 27px;
+}
+
+/* line 27, ../sass/modules/_typography.scss */
+h4 {
+  font-size: 23px;
+}
+
+/* line 31, ../sass/modules/_typography.scss */
+h5 {
+  font-size: 17px;
+}
+
+/* line 35, ../sass/modules/_typography.scss */
+h6 {
+  font-size: 14px;
+}
+
+/* line 39, ../sass/modules/_typography.scss */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+
+/*
+    A simple responsive grid system  
+
+    Usage:
+    <div class="grid">
+        <div class="col half"></div>
+        <div class="col half"></div>
+    </div>  
+*/
+/* line 20, ../sass/modules/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 52, ../sass/modules/_grid.scss */
+#master-header > div {
+  margin: 0 auto;
+  max-width: 980px;
+  *zoom: 1;
+  padding: 20px 0;
+}
+/* line 32, ../sass/modules/_grid.scss */
+#master-header > div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 54, ../sass/modules/_grid.scss */
+#master-header > div h1 {
+  float: left;
+  padding: 0 24px;
+  width: 33.33%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 54, ../sass/modules/_grid.scss */
+  #master-header > div h1 {
+    /* Small Device Styles here */
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+/* line 57, ../sass/modules/_grid.scss */
+#master-header > div nav#primary {
+  float: left;
+  padding: 0 24px;
+  width: 66.66%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 57, ../sass/modules/_grid.scss */
+  #master-header > div nav#primary {
+    /* Small Device Styles here */
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+
+/* line 62, ../sass/modules/_grid.scss */
+#main-content {
+  margin: 0 auto;
+  max-width: 980px;
+  *zoom: 1;
+  padding: 20px 0;
+}
+/* line 32, ../sass/modules/_grid.scss */
+#main-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 64, ../sass/modules/_grid.scss */
+#main-content nav#secondary {
+  float: left;
+  padding: 0 24px;
+  width: 33.33%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 64, ../sass/modules/_grid.scss */
+  #main-content nav#secondary {
+    /* Small Device Styles here */
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+/* line 67, ../sass/modules/_grid.scss */
+#main-content > section {
+  float: left;
+  padding: 0 24px;
+  width: 66.66%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 67, ../sass/modules/_grid.scss */
+  #main-content > section {
+    /* Small Device Styles here */
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+
+/* line 72, ../sass/modules/_grid.scss */
+#master-footer > div {
+  margin: 0 auto;
+  max-width: 980px;
+  *zoom: 1;
+  padding: 20px 0;
+}
+/* line 32, ../sass/modules/_grid.scss */
+#master-footer > div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 74, ../sass/modules/_grid.scss */
+#master-footer > div > section {
+  float: left;
+  padding: 0 24px;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 74, ../sass/modules/_grid.scss */
+  #master-footer > div > section {
+    /* Small Device Styles here */
+    float: none;
+    width: auto !important;
+    padding: 0 !important;
+  }
+}
+
 /*
     Site or App Theme styles
 */
-/* line 10, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 body {
   background-color: white;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 #master-header {
   background-color: #0ca0c6;
   color: white;
 }
-/* line 17, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 #master-header h1 {
   color: white;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 #master-footer {
   background-color: #0ca0c6;
   border-top: 3px #0ca0c6 solid;
   color: white;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 h1, h2, h3 {
   color: #0ca0c6;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 h1.section-heading {
   font-size: 23px;
   color: #808080;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 nav#primary ul {
   float: right;
 }
-/* line 63, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 nav#primary ul li {
   float: left;
 }
-/* line 67, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 nav#primary a {
   color: #1e1e1e;
   background-color: #d0d0d0;
@@ -52,11 +301,11 @@ nav#primary a {
   margin: 0 4px;
   border-radius: 3px;
 }
-/* line 43, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 nav#primary a:hover {
   background-color: white;
 }
-/* line 71, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 nav#secondary a {
   color: #1e1e1e;
   background-color: #d0d0d0;
@@ -67,7 +316,7 @@ nav#secondary a {
   text-align: center;
   border: 1px #0ca0c6 solid;
 }
-/* line 43, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 nav#secondary a:hover {
   background-color: white;
 }

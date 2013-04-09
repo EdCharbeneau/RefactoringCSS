@@ -139,16 +139,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\grid.css" />
-    <Content Include="Content\reset.css" />
     <Content Include="Content\screen.css" />
-    <Content Include="Content\typography.css" />
     <Content Include="Global.asax" />
     <Content Include="config.rb" />
-    <Content Include="sass\grid.scss" />
-    <Content Include="sass\reset.scss" />
+    <Content Include="sass\modules\_grid.scss" />
+    <Content Include="sass\modules\_reset.scss" />
     <Content Include="sass\screen.scss" />
-    <Content Include="sass\typography.scss" />
+    <Content Include="sass\modules\_typography.scss" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Ipsum_examples.txt" />
     <Content Include="Scripts\jquery-1.7.1.js" />
