@@ -10,6 +10,8 @@ $accent-color: #0ca0c6;
 $highlight-color: #FFF;
 $contrast-color: #1e1e1e;
 
+@import "modules/buttons";
+
 body {
     background-color: $highlight-color;
 }
@@ -35,28 +37,6 @@ h1, h2, h3 {
 h1.section-heading {
     font-size: 23px;
     color: #808080;
-}
-@mixin button-base($margin: 2px, $padding: 10px) {
-    color: $contrast-color;
-    background-color: $base-color;
-    text-decoration: none;
-    display: block;
-	padding:$padding;
-	margin: $margin;
-	&:hover {
-        background-color: $highlight-color;
-    }
-}
-
-@mixin square-button($margin: 2px, $padding: 10px) {
-	@include button-base($margin, $padding);
-    text-align: center;
-    border: 1px $accent-color solid;
-}
-
-@mixin round-button($margin, $padding, $radius: 3px) {
-    @include button-base($margin,12px 6px);
-    border-radius: $radius;
 }
 
 nav {
