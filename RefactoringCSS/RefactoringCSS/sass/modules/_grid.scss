@@ -1,11 +1,5 @@
 /*
     A simple responsive grid system  
-
-    Usage:
-    <div class="grid">
-        <div class="col half"></div>
-        <div class="col half"></div>
-    </div>  
 */
 
 $layout-width: 980px;
@@ -47,36 +41,6 @@ $two-thirds: 66.66%;
         padding: 0 !important;
 	}
 }
-
-//Page layout
-#master-header > div {
-	@include row;
-	h1 {
-	    @include column($third);
-	}
-	nav#primary {
-	    @include column($two-thirds);
-	}
-}
-
-#main-content {
-    @include row;
-	nav#secondary {
-        @include column($third);
-	}
-	> section {
-	    @include column($two-thirds);
-    }
-}
-
-#master-footer > div {
-	@include row;
-	> section {
-	    @include column;
-	}
-}
-
-
 
 // Uncomment if the grid mixins need to be used on an inline class attribute
 //.grid {

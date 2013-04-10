@@ -1,0 +1,27 @@
+//Page layout
+#master-header > div {
+	@include row;
+	h1 {
+	    @include column($third);
+	}
+	nav#primary {
+	    @include column($two-thirds);
+	}
+}
+
+#main-content {
+    @include row;
+	nav#secondary {
+        @include column($third);
+	}
+	> section {
+	    @include column($two-thirds);
+    }
+}
+
+#master-footer > div {
+	@include row;
+	> section {
+	    @include column;
+	}
+}

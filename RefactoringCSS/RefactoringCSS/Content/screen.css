@@ -116,41 +116,35 @@ p {
 
 /*
     A simple responsive grid system  
-
-    Usage:
-    <div class="grid">
-        <div class="col half"></div>
-        <div class="col half"></div>
-    </div>  
 */
-/* line 20, ../sass/modules/_grid.scss */
+/* line 14, ../sass/modules/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 52, ../sass/modules/_grid.scss */
+/* line 2, ../sass/_layout.scss */
 #master-header > div {
   margin: 0 auto;
   max-width: 980px;
   *zoom: 1;
   padding: 20px 0;
 }
-/* line 32, ../sass/modules/_grid.scss */
+/* line 26, ../sass/modules/_grid.scss */
 #master-header > div:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 54, ../sass/modules/_grid.scss */
+/* line 4, ../sass/_layout.scss */
 #master-header > div h1 {
   float: left;
   padding: 0 24px;
   width: 33.33%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 54, ../sass/modules/_grid.scss */
+  /* line 4, ../sass/_layout.scss */
   #master-header > div h1 {
     /* Small Device Styles here */
     float: none;
@@ -158,14 +152,14 @@ p {
     padding: 0 !important;
   }
 }
-/* line 57, ../sass/modules/_grid.scss */
+/* line 7, ../sass/_layout.scss */
 #master-header > div nav#primary {
   float: left;
   padding: 0 24px;
   width: 66.66%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 57, ../sass/modules/_grid.scss */
+  /* line 7, ../sass/_layout.scss */
   #master-header > div nav#primary {
     /* Small Device Styles here */
     float: none;
@@ -174,27 +168,27 @@ p {
   }
 }
 
-/* line 62, ../sass/modules/_grid.scss */
+/* line 12, ../sass/_layout.scss */
 #main-content {
   margin: 0 auto;
   max-width: 980px;
   *zoom: 1;
   padding: 20px 0;
 }
-/* line 32, ../sass/modules/_grid.scss */
+/* line 26, ../sass/modules/_grid.scss */
 #main-content:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 64, ../sass/modules/_grid.scss */
+/* line 14, ../sass/_layout.scss */
 #main-content nav#secondary {
   float: left;
   padding: 0 24px;
   width: 33.33%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 64, ../sass/modules/_grid.scss */
+  /* line 14, ../sass/_layout.scss */
   #main-content nav#secondary {
     /* Small Device Styles here */
     float: none;
@@ -202,14 +196,14 @@ p {
     padding: 0 !important;
   }
 }
-/* line 67, ../sass/modules/_grid.scss */
+/* line 17, ../sass/_layout.scss */
 #main-content > section {
   float: left;
   padding: 0 24px;
   width: 66.66%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 67, ../sass/modules/_grid.scss */
+  /* line 17, ../sass/_layout.scss */
   #main-content > section {
     /* Small Device Styles here */
     float: none;
@@ -218,27 +212,27 @@ p {
   }
 }
 
-/* line 72, ../sass/modules/_grid.scss */
+/* line 22, ../sass/_layout.scss */
 #master-footer > div {
   margin: 0 auto;
   max-width: 980px;
   *zoom: 1;
   padding: 20px 0;
 }
-/* line 32, ../sass/modules/_grid.scss */
+/* line 26, ../sass/modules/_grid.scss */
 #master-footer > div:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 74, ../sass/modules/_grid.scss */
+/* line 24, ../sass/_layout.scss */
 #master-footer > div > section {
   float: left;
   padding: 0 24px;
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 74, ../sass/modules/_grid.scss */
+  /* line 24, ../sass/_layout.scss */
   #master-footer > div > section {
     /* Small Device Styles here */
     float: none;
@@ -250,48 +244,48 @@ p {
 /*
     Site or App Theme styles
 */
-/* line 15, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 body {
   background-color: white;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 #master-header {
   background-color: #0ca0c6;
   color: white;
 }
-/* line 22, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 #master-header h1 {
   color: white;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 #master-footer {
   background-color: #0ca0c6;
   border-top: 3px #0ca0c6 solid;
   color: white;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 h1, h2, h3 {
   color: #0ca0c6;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 h1.section-heading {
   font-size: 23px;
   color: #808080;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 nav#primary ul {
   float: right;
 }
-/* line 46, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 nav#primary ul li {
   float: left;
 }
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 nav#primary a {
   color: #1e1e1e;
   background-color: #d0d0d0;
@@ -305,7 +299,7 @@ nav#primary a {
 nav#primary a:hover {
   background-color: white;
 }
-/* line 54, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 nav#secondary a {
   color: #1e1e1e;
   background-color: #d0d0d0;

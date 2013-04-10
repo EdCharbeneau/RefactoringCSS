@@ -1,6 +1,7 @@
 @import "modules/reset";
 @import "modules/typography";
 @import "modules/grid";
+@import "layout";
 /*
     Site or App Theme styles
 */
@@ -11,6 +12,7 @@ $highlight-color: #FFF;
 $contrast-color: #1e1e1e;
 
 @import "modules/buttons";
+
 
 body {
     background-color: $highlight-color;

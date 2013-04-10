@@ -147,6 +147,7 @@
     <Content Include="sass\screen.scss" />
     <Content Include="sass\modules\_typography.scss" />
     <Content Include="sass\modules\_buttons.scss" />
+    <Content Include="sass\_layout.scss" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Ipsum_examples.txt" />
     <Content Include="Scripts\jquery-1.7.1.js" />
