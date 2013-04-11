@@ -143,7 +143,6 @@
     <Content Include="Global.asax" />
     <Content Include="config.rb" />
     <Content Include="sass\modules\_grid.scss" />
-    <Content Include="sass\modules\_reset.scss" />
     <Content Include="sass\screen.scss" />
     <Content Include="sass\modules\_typography.scss" />
     <Content Include="sass\modules\_buttons.scss" />
