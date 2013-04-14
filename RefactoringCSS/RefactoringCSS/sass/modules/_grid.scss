@@ -1,7 +1,6 @@
 /*
     A simple responsive grid system  
 */
-
 $layout-width: 980px;
 $gutter:24px;
 $small-device-width: 767px;
@@ -11,10 +10,9 @@ $vertical-whitespace: 20px;
 $third: 33.33%;
 $two-thirds: 66.66%;
 
+@import "compass";
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 }
 
 // Grid Mixins
